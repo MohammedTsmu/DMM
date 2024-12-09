@@ -229,6 +229,7 @@
             this.btn_log.Size = new System.Drawing.Size(264, 80);
             this.btn_log.TabIndex = 0;
             this.btn_log.Text = "عرض السجل";
+            this.btn_log.Click += new System.EventHandler(this.btn_log_Click);
             // 
             // btn_update
             // 
@@ -256,6 +257,7 @@
             this.btn_print.Size = new System.Drawing.Size(140, 80);
             this.btn_print.TabIndex = 0;
             this.btn_print.Text = "طباعة";
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // btn_edit
             // 
@@ -269,6 +271,7 @@
             this.btn_edit.Size = new System.Drawing.Size(140, 80);
             this.btn_edit.TabIndex = 0;
             this.btn_edit.Text = "تعديل";
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_delete
             // 
@@ -282,6 +285,7 @@
             this.btn_delete.Size = new System.Drawing.Size(140, 80);
             this.btn_delete.TabIndex = 0;
             this.btn_delete.Text = "حذف";
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_add
             // 

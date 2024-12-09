@@ -9,11 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+
 
 namespace DMM.Pages
 {
     public partial class Page_Suppliers : DevExpress.XtraEditors.XtraUserControl
     {
+        // DataBase and Tables
+        DBDMMEntities db;
+        TB_Suppliers tbAdd;
+        int id;
+        //public Page_Suppliers()
+
         public Page_Suppliers()
         {
             InitializeComponent();
@@ -47,6 +55,102 @@ namespace DMM.Pages
             add.btn_addclose.Text = " غلق +اضافة";
             add.page = this;
             add.Show();
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("ID"));
+                if (id > 0)
+                {
+                    db = new DBDMMEntities();
+                    tbAdd = db.TB_Suppliers.Where(x => x.ID == id).FirstOrDefault();
+                    DMM.AddPage.Add_Supplier add = new AddPage.Add_Supplier();
+                    add.id = id;
+                    add.btn_add.Text = "تعديل";
+                    add.btn_addclose.Text = " غلق +تعديل";
+                    add.edt_name.Text = tbAdd.FullName;
+                    add.edt_address.Text = tbAdd.Address;
+                    add.edt_phone.Text = tbAdd.Phone;
+                    add.page = this;
+                    add.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد بيانات لتعديلها");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            var rs = MessageBox.Show("هل انت متأكد من هذا الاجراء, لايمكن استرجاع البيانات", "اجراء حذف", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (rs == DialogResult.Yes)
+            {
+                try
+                {
+                    id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("ID"));
+                    if (id > 0)
+                    {
+                        db = new DBDMMEntities();
+                        tbAdd = db.TB_Suppliers.Where(x => x.ID == id).FirstOrDefault();
+                        db.Entry(tbAdd).State = EntityState.Deleted;
+                        db.SaveChanges();
+                        LoadData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("لا يوجد بيانات لحذفها");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            gridControl1.ShowPrintPreview();
+        }
+
+        private void btn_log_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("ID"));
+                if (id > 0)
+                {
+                    db = new DBDMMEntities();
+                    tbAdd = db.TB_Suppliers.Where(x => x.ID == id).FirstOrDefault();
+                    DMM.AddPage.Log_Supplier add = new AddPage.Log_Supplier();
+                    add.txt_id.Text = id.ToString();
+                    add.txt_name.Text = tbAdd.FullName.ToString();
+                    add.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد بيانات لتعديلها");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

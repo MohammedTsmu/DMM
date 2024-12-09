@@ -97,6 +97,7 @@ namespace DMM.AddPage
                 MessageBox.Show(ex.Message);
             }
         }
+
         // Edit Data
         private void EditData()
         {
@@ -115,8 +116,7 @@ namespace DMM.AddPage
                 };
                 db.Set<TB_Suppliers>().AddOrUpdate(tbAdd);
                 db.SaveChanges();
-                //toastNotificationsManager1.ShowNotification("c3041638-7de3-4554-b82a-7ce25b2029e3");
-                //toastNotificationsManager1.ShowNotification("079eee21-507d-452b-a6f5-0f44c33f0b0f");
+                toastNotificationsManager1.ShowNotification("12f5ef9f-66e0-4ea6-ae01-495e5abe2b69");
             }
             catch (Exception ex)
             {
@@ -142,7 +142,7 @@ namespace DMM.AddPage
         // Clear Value 
         private void ClearData()
         {
-            edt_address.Text = edt_name.Text = edt_name.Text = "";
+            edt_address.Text = edt_name.Text = edt_phone.Text = "";
         }
     }
 }
