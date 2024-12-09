@@ -32,7 +32,7 @@ namespace DMM
         private void btn_suppliers_Click(object sender, EventArgs e)
         {
             //    Page_Suppliers page = new Page_Suppliers();
-            //    LoadPage(page);
+            //LoadPage(page);
         }
 
         private void btn_customer_Click(object sender, EventArgs e)

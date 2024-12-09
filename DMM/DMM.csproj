@@ -41,8 +41,20 @@
     <Reference Include="DevExpress.Sparkline.v24.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v24.1" />
     <Reference Include="DevExpress.Drawing.v24.1" />
+    <Reference Include="DevExpress.XtraGrid.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,11 +65,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPage\Add_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_Supplier.Designer.cs">
+      <DependentUpon>Add_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Log_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Log_Supplier.Designer.cs">
+      <DependentUpon>Log_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debit_Customer.cs">
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Debit_Suppliers.cs">
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDMM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDMM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MDMM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MDMM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDMM.edmx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Page_Home.cs">
       <SubType>UserControl</SubType>
@@ -65,14 +110,45 @@
     <Compile Include="Pages\Page_Home.Designer.cs">
       <DependentUpon>Page_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Page_Suppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Page_Suppliers.Designer.cs">
+      <DependentUpon>Page_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCustomer.cs">
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSupplier.cs">
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TB_Customers.cs">
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Suppliers.cs">
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Users.cs">
+      <DependentUpon>MDMM.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPage\Add_Supplier.resx">
+      <DependentUpon>Add_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Log_Supplier.resx">
+      <DependentUpon>Log_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Page_Home.resx">
       <DependentUpon>Page_Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Page_Suppliers.resx">
+      <DependentUpon>Page_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,6 +159,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="App.config" />
+    <EntityDeploy Include="MDMM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MDMM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MDMM.edmx.diagram">
+      <DependentUpon>MDMM.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,8 +178,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AddPage\" />
     <Folder Include="BL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MDMM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MDMM.Context.cs</LastGenOutput>
+      <DependentUpon>MDMM.edmx</DependentUpon>
+    </Content>
+    <Content Include="MDMM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MDMM.edmx</DependentUpon>
+      <LastGenOutput>MDMM.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
