@@ -36,6 +36,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btn_adddebit = new DevExpress.XtraEditors.SimpleButton();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colFullName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDebit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDateT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,6 +47,8 @@
             this.btn_paymentdelete = new DevExpress.XtraEditors.SimpleButton();
             this.btn_paymentadd = new DevExpress.XtraEditors.SimpleButton();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colPayment = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDateT1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -54,11 +59,6 @@
             this.txt_name = new System.Windows.Forms.Label();
             this.btn_logclear = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.colFullName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDebit = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDateT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPayment = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDateT1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -94,6 +94,7 @@
             this.btn_print.Size = new System.Drawing.Size(120, 75);
             this.btn_print.TabIndex = 1;
             this.btn_print.Text = "طباعة";
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // btn_edtdebit
             // 
@@ -107,6 +108,7 @@
             this.btn_edtdebit.Size = new System.Drawing.Size(120, 75);
             this.btn_edtdebit.TabIndex = 2;
             this.btn_edtdebit.Text = "تعديل";
+            this.btn_edtdebit.Click += new System.EventHandler(this.btn_edtdebit_Click);
             // 
             // btn_delete
             // 
@@ -120,6 +122,7 @@
             this.btn_delete.Size = new System.Drawing.Size(120, 75);
             this.btn_delete.TabIndex = 3;
             this.btn_delete.Text = "حذف";
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // panel4
             // 
@@ -146,6 +149,7 @@
             this.btn_adddebit.Size = new System.Drawing.Size(120, 75);
             this.btn_adddebit.TabIndex = 4;
             this.btn_adddebit.Text = "اضافة";
+            this.btn_adddebit.Click += new System.EventHandler(this.btn_adddebit_Click);
             // 
             // gridView1
             // 
@@ -353,9 +357,44 @@
             this.gridView1.OptionsPrint.EnableAppearanceOddRow = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
+            // colFullName
+            // 
+            this.colFullName.Caption = "تفاصيل القائمة";
+            this.colFullName.FieldName = "FullName";
+            this.colFullName.MinWidth = 25;
+            this.colFullName.Name = "colFullName";
+            this.colFullName.OptionsColumn.AllowEdit = false;
+            this.colFullName.Visible = true;
+            this.colFullName.VisibleIndex = 0;
+            this.colFullName.Width = 94;
+            // 
+            // colDebit
+            // 
+            this.colDebit.Caption = "الملبغ";
+            this.colDebit.FieldName = "Debit";
+            this.colDebit.MinWidth = 25;
+            this.colDebit.Name = "colDebit";
+            this.colDebit.OptionsColumn.AllowEdit = false;
+            this.colDebit.Visible = true;
+            this.colDebit.VisibleIndex = 1;
+            this.colDebit.Width = 94;
+            // 
+            // colDateT
+            // 
+            this.colDateT.Caption = "تاريخ الاضافة";
+            this.colDateT.FieldName = "DateT";
+            this.colDateT.MinWidth = 25;
+            this.colDateT.Name = "colDateT";
+            this.colDateT.OptionsColumn.AllowEdit = false;
+            this.colDateT.Visible = true;
+            this.colDateT.VisibleIndex = 2;
+            this.colDateT.Width = 94;
+            // 
             // gridControl1
             // 
+            this.gridControl1.DataSource = typeof(DMM.Debit_Suppliers);
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.gridControl1.Location = new System.Drawing.Point(0, 46);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -399,6 +438,7 @@
             this.btn_paymentprint.Size = new System.Drawing.Size(120, 75);
             this.btn_paymentprint.TabIndex = 1;
             this.btn_paymentprint.Text = "طباعة";
+            this.btn_paymentprint.Click += new System.EventHandler(this.btn_paymentprint_Click);
             // 
             // btn_paymentedit
             // 
@@ -412,6 +452,7 @@
             this.btn_paymentedit.Size = new System.Drawing.Size(120, 75);
             this.btn_paymentedit.TabIndex = 2;
             this.btn_paymentedit.Text = "تعديل";
+            this.btn_paymentedit.Click += new System.EventHandler(this.btn_paymentedit_Click);
             // 
             // btn_paymentdelete
             // 
@@ -425,6 +466,7 @@
             this.btn_paymentdelete.Size = new System.Drawing.Size(120, 75);
             this.btn_paymentdelete.TabIndex = 3;
             this.btn_paymentdelete.Text = "حذف";
+            this.btn_paymentdelete.Click += new System.EventHandler(this.btn_paymentdelete_Click);
             // 
             // btn_paymentadd
             // 
@@ -438,6 +480,7 @@
             this.btn_paymentadd.Size = new System.Drawing.Size(120, 75);
             this.btn_paymentadd.TabIndex = 4;
             this.btn_paymentadd.Text = "اضافة";
+            this.btn_paymentadd.Click += new System.EventHandler(this.btn_paymentadd_Click);
             // 
             // gridView2
             // 
@@ -644,9 +687,33 @@
             this.gridView2.OptionsPrint.EnableAppearanceOddRow = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
+            // colPayment
+            // 
+            this.colPayment.Caption = "الدفعة";
+            this.colPayment.FieldName = "Payment";
+            this.colPayment.MinWidth = 25;
+            this.colPayment.Name = "colPayment";
+            this.colPayment.OptionsColumn.AllowEdit = false;
+            this.colPayment.Visible = true;
+            this.colPayment.VisibleIndex = 0;
+            this.colPayment.Width = 94;
+            // 
+            // colDateT1
+            // 
+            this.colDateT1.Caption = "تاريخ الاضافة";
+            this.colDateT1.FieldName = "DateT";
+            this.colDateT1.MinWidth = 25;
+            this.colDateT1.Name = "colDateT1";
+            this.colDateT1.OptionsColumn.AllowEdit = false;
+            this.colDateT1.Visible = true;
+            this.colDateT1.VisibleIndex = 1;
+            this.colDateT1.Width = 94;
+            // 
             // gridControl2
             // 
+            this.gridControl2.DataSource = typeof(DMM.PaymentSupplier);
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.gridControl2.Location = new System.Drawing.Point(0, 46);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
@@ -759,6 +826,7 @@
             this.btn_logclear.Size = new System.Drawing.Size(170, 75);
             this.btn_logclear.TabIndex = 4;
             this.btn_logclear.Text = "تنظيف السجل";
+            this.btn_logclear.Click += new System.EventHandler(this.btn_logclear_Click);
             // 
             // panel1
             // 
@@ -774,61 +842,6 @@
             this.panel1.Size = new System.Drawing.Size(1078, 112);
             this.panel1.TabIndex = 3;
             // 
-            // colFullName
-            // 
-            this.colFullName.Caption = "تفاصيل القائمة";
-            this.colFullName.FieldName = "FullName";
-            this.colFullName.MinWidth = 25;
-            this.colFullName.Name = "colFullName";
-            this.colFullName.OptionsColumn.AllowEdit = false;
-            this.colFullName.Visible = true;
-            this.colFullName.VisibleIndex = 0;
-            this.colFullName.Width = 94;
-            // 
-            // colDebit
-            // 
-            this.colDebit.Caption = "الملبغ";
-            this.colDebit.FieldName = "Debit";
-            this.colDebit.MinWidth = 25;
-            this.colDebit.Name = "colDebit";
-            this.colDebit.OptionsColumn.AllowEdit = false;
-            this.colDebit.Visible = true;
-            this.colDebit.VisibleIndex = 1;
-            this.colDebit.Width = 94;
-            // 
-            // colDateT
-            // 
-            this.colDateT.Caption = "تاريخ الاضافة";
-            this.colDateT.FieldName = "DateT";
-            this.colDateT.MinWidth = 25;
-            this.colDateT.Name = "colDateT";
-            this.colDateT.OptionsColumn.AllowEdit = false;
-            this.colDateT.Visible = true;
-            this.colDateT.VisibleIndex = 2;
-            this.colDateT.Width = 94;
-            // 
-            // colPayment
-            // 
-            this.colPayment.Caption = "الدفعة";
-            this.colPayment.FieldName = "Payment";
-            this.colPayment.MinWidth = 25;
-            this.colPayment.Name = "colPayment";
-            this.colPayment.OptionsColumn.AllowEdit = false;
-            this.colPayment.Visible = true;
-            this.colPayment.VisibleIndex = 0;
-            this.colPayment.Width = 94;
-            // 
-            // colDateT1
-            // 
-            this.colDateT1.Caption = "تاريخ الاضافة";
-            this.colDateT1.FieldName = "DateT";
-            this.colDateT1.MinWidth = 25;
-            this.colDateT1.Name = "colDateT1";
-            this.colDateT1.OptionsColumn.AllowEdit = false;
-            this.colDateT1.Visible = true;
-            this.colDateT1.VisibleIndex = 1;
-            this.colDateT1.Width = 94;
-            // 
             // Log_Supplier
             // 
             this.Appearance.Options.UseFont = true;
@@ -840,12 +853,13 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconOptions.ShowIcon = false;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Log_Supplier";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "سجل المورد";
+            this.Load += new System.EventHandler(this.Log_Supplier_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
