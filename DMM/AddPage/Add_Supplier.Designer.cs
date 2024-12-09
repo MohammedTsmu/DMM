@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Supplier));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_addclose = new DevExpress.XtraEditors.SimpleButton();
@@ -38,7 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.edt_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.toastNotificationsManager1 = new DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toastNotificationsManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +66,7 @@
             this.btn_addclose.Size = new System.Drawing.Size(167, 58);
             this.btn_addclose.TabIndex = 5;
             this.btn_addclose.Text = "اضافة+غلق";
+            this.btn_addclose.Click += new System.EventHandler(this.btn_addclose_Click);
             // 
             // btn_add
             // 
@@ -76,6 +80,7 @@
             this.btn_add.Size = new System.Drawing.Size(150, 58);
             this.btn_add.TabIndex = 4;
             this.btn_add.Text = "اضافة";
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // edt_address
             // 
@@ -83,7 +88,7 @@
             this.edt_address.Location = new System.Drawing.Point(41, 315);
             this.edt_address.Name = "edt_address";
             this.edt_address.Size = new System.Drawing.Size(581, 42);
-            this.edt_address.TabIndex = 10;
+            this.edt_address.TabIndex = 3;
             this.edt_address.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
@@ -93,7 +98,7 @@
             this.label3.Location = new System.Drawing.Point(283, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 36);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 0;
             this.label3.Text = "العنوان";
             // 
             // edt_phone
@@ -102,7 +107,7 @@
             this.edt_phone.Location = new System.Drawing.Point(41, 199);
             this.edt_phone.Name = "edt_phone";
             this.edt_phone.Size = new System.Drawing.Size(581, 42);
-            this.edt_phone.TabIndex = 9;
+            this.edt_phone.TabIndex = 2;
             this.edt_phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -112,7 +117,7 @@
             this.label2.Location = new System.Drawing.Point(271, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 36);
-            this.label2.TabIndex = 5;
+            this.label2.TabIndex = 0;
             this.label2.Text = "رقم الهاتف";
             // 
             // edt_name
@@ -121,7 +126,7 @@
             this.edt_name.Location = new System.Drawing.Point(41, 79);
             this.edt_name.Name = "edt_name";
             this.edt_name.Size = new System.Drawing.Size(581, 42);
-            this.edt_name.TabIndex = 7;
+            this.edt_name.TabIndex = 1;
             this.edt_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -131,8 +136,15 @@
             this.label1.Location = new System.Drawing.Point(271, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 36);
-            this.label1.TabIndex = 6;
+            this.label1.TabIndex = 0;
             this.label1.Text = "اسم المورد";
+            // 
+            // toastNotificationsManager1
+            // 
+            this.toastNotificationsManager1.ApplicationId = "3e62c3fa-a2bf-48a4-85c3-6d2273ecbcb0";
+            this.toastNotificationsManager1.Notifications.AddRange(new DevExpress.XtraBars.ToastNotifications.IToastNotificationProperties[] {
+            new DevExpress.XtraBars.ToastNotifications.ToastNotification("079eee21-507d-452b-a6f5-0f44c33f0b0f", ((System.Drawing.Image)(resources.GetObject("toastNotificationsManager1.Notifications"))), "Pellentesque lacinia tellus eget volutpat", "تمت الاضافة بنجاح", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor i" +
+                    "ncididunt ut labore et dolore magna aliqua.", DevExpress.XtraBars.ToastNotifications.ToastNotificationTemplate.ImageAndText04)});
             // 
             // Add_Supplier
             // 
@@ -148,7 +160,7 @@
             this.Controls.Add(this.edt_name);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Add_Supplier";
@@ -158,6 +170,7 @@
             this.Text = "اضافة مورد";
             this.TopMost = true;
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.toastNotificationsManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +187,6 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox edt_name;
         private System.Windows.Forms.Label label1;
+        private DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager toastNotificationsManager1;
     }
 }
