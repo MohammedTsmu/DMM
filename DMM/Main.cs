@@ -16,10 +16,5 @@ namespace DMM
         {
             InitializeComponent();
         }
-
-        private void accordionControl1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
