@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPage\Add_DebitSupplier .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_DebitSupplier .Designer.cs">
+      <DependentUpon>Add_DebitSupplier .cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPage\Add_Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,7 @@
     <Compile Include="AddPage\Log_Supplier.Designer.cs">
       <DependentUpon>Log_Supplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="BL\UPDATE.cs" />
     <Compile Include="Debit_Customer.cs">
       <DependentUpon>MDMM.tt</DependentUpon>
     </Compile>
@@ -133,6 +140,9 @@
     <Compile Include="TB_Users.cs">
       <DependentUpon>MDMM.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddPage\Add_DebitSupplier .resx">
+      <DependentUpon>Add_DebitSupplier .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddPage\Add_Supplier.resx">
       <DependentUpon>Add_Supplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,9 +187,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="MDMM.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

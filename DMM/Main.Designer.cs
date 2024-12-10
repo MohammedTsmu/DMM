@@ -1,4 +1,5 @@
-﻿namespace DMM
+﻿
+namespace DMM
 {
     partial class Main
     {
@@ -33,7 +34,6 @@
             this.pn_container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.btn_home = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.btn_suppliers = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btn_customer = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btn_report = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -46,7 +46,6 @@
             this.txt_role = new DevExpress.XtraBars.BarStaticItem();
             this.btn_logout = new DevExpress.XtraBars.BarButtonItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -54,8 +53,9 @@
             // 
             // pn_container
             // 
+            this.pn_container.Appearance.BackColor = System.Drawing.Color.White;
+            this.pn_container.Appearance.Options.UseBackColor = true;
             this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_container.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pn_container.Location = new System.Drawing.Point(0, 39);
             this.pn_container.Margin = new System.Windows.Forms.Padding(5);
             this.pn_container.Name = "pn_container";
@@ -67,7 +67,6 @@
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btn_home,
-            this.accordionControlSeparator1,
             this.btn_suppliers,
             this.btn_customer,
             this.btn_report,
@@ -95,12 +94,8 @@
             this.btn_home.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.ImageOptions.Image")));
             this.btn_home.Name = "btn_home";
             this.btn_home.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btn_home.Text = "الرئيسية";
+            this.btn_home.Text = "الرئيسة";
             this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
-            // 
-            // accordionControlSeparator1
-            // 
-            this.accordionControlSeparator1.Name = "accordionControlSeparator1";
             // 
             // btn_suppliers
             // 
@@ -239,7 +234,7 @@
             this.txt_role.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.txt_role.Caption = "مدير";
             this.txt_role.Id = 1;
-            this.txt_role.ItemAppearance.Normal.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_role.ItemAppearance.Normal.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_role.ItemAppearance.Normal.Options.UseFont = true;
             this.txt_role.Name = "txt_role";
             // 
@@ -247,7 +242,7 @@
             // 
             this.btn_logout.Caption = "تسجيل الخروج";
             this.btn_logout.Id = 2;
-            this.btn_logout.ItemAppearance.Normal.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_logout.ItemAppearance.Normal.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logout.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_logout_ItemClick);
@@ -261,14 +256,6 @@
             this.btn_logout});
             this.fluentFormDefaultManager1.MaxItemId = 3;
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(55, 103);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "simpleButton1";
-            // 
             // Main
             // 
             this.Appearance.Options.UseFont = true;
@@ -278,16 +265,19 @@
             this.ControlContainer = this.pn_container;
             this.Controls.Add(this.pn_container);
             this.Controls.Add(this.accordionControl1);
-            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("Main.IconOptions.Icon")));
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Main.IconOptions.Image")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Main";
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DMM";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.Main_Activated);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
@@ -303,16 +293,14 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_home;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_suppliers;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_customer;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btn_report;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_analysis;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btn_users;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btn_settings;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_about;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraBars.BarStaticItem txt_username;
-        private DevExpress.XtraBars.BarStaticItem txt_role;
         private DevExpress.XtraBars.BarButtonItem btn_logout;
+        public DevExpress.XtraBars.BarStaticItem txt_username;
+        public DevExpress.XtraBars.BarStaticItem txt_role;
+        public DevExpress.XtraBars.Navigation.AccordionControlElement btn_report;
+        public DevExpress.XtraBars.Navigation.AccordionControlElement btn_users;
+        public DevExpress.XtraBars.Navigation.AccordionControlElement btn_settings;
     }
 }
 

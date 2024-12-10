@@ -12,15 +12,17 @@ using System.Windows.Forms;
 
 namespace DMM.AddPage
 {
-    public partial class Add_Supplier : DevExpress.XtraEditors.XtraForm
+    public partial class Add_DebitSupplier : DevExpress.XtraEditors.XtraForm
     {
         // DataBase and Tables
         DBDMMEntities db;
-        TB_Suppliers tbAdd;
-       public DMM.Pages.Page_Suppliers page;
+        Debit_Suppliers tbAdd;
+       public DMM.AddPage.Log_Supplier page;
         // other var
         public int id;
-        public Add_Supplier()
+        public int SupplierID;
+        public string SupplierName;
+        public Add_DebitSupplier()
         {
             InitializeComponent();
         }
@@ -31,7 +33,7 @@ namespace DMM.AddPage
         private void Add()
         {
             // Check Empty value
-            if (edt_name.Text == "")
+            if (edt_name.Text == "" || edt_debit.Text=="")
             {
                 MessageBox.Show("بعض الحقول مطلوبة","بعض الحقول مطلوبة",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
@@ -51,7 +53,7 @@ namespace DMM.AddPage
                 }
 
                 // Update Data
-                page.LoadData();
+                page.LoadDebitData();
             }
         }
 
@@ -61,13 +63,13 @@ namespace DMM.AddPage
             try
             {
                 db = new DBDMMEntities();
-                tbAdd = new TB_Suppliers
+                tbAdd = new Debit_Suppliers
                 {
-                    FullName = edt_name.Text,
-                    Address = edt_address.Text,
-                    Phone = edt_phone.Text,
-                    DateT = DateTime.Now,
-                    Debit=0
+                    FullName=edt_name.Text,
+                    Debit=Convert.ToDouble(edt_debit.Text),
+                    SupplierName=SupplierName,
+                    ID_Supplier=SupplierID,
+                    DateT = DateTime.Now
                     
                 };
                 db.Entry(tbAdd).State = System.Data.Entity.EntityState.Added;
@@ -85,17 +87,17 @@ namespace DMM.AddPage
             try
             {
                 db = new DBDMMEntities();
-                tbAdd = new TB_Suppliers
+                tbAdd = new Debit_Suppliers
                 {
                     ID=id,
                     FullName = edt_name.Text,
-                    Address = edt_address.Text,
-                    Phone = edt_phone.Text,
-                    DateT = DateTime.Now,
-                    
+                    Debit = Convert.ToDouble(edt_debit.Text),
+                    SupplierName = SupplierName,
+                    ID_Supplier = SupplierID,
+                    DateT = DateTime.Now
 
                 };
-                db.Set<TB_Suppliers>().AddOrUpdate(tbAdd);
+                db.Set<Debit_Suppliers>().AddOrUpdate(tbAdd);
                 db.SaveChanges();
                 toastNotificationsManager1.ShowNotification("c3041638-7de3-4554-b82a-7ce25b2029e3");
 
@@ -124,7 +126,7 @@ namespace DMM.AddPage
         // Clear Value 
         private void ClearData()
         {
-            edt_address.Text = edt_name.Text = edt_phone.Text = "";
+            edt_name.Text = edt_name.Text = "";
         }
     }
 }
