@@ -73,8 +73,8 @@ namespace DMM
 
         private void btn_report_Click(object sender, EventArgs e)
         {
-            //ReportPage page = new ReportPage();
-            //LoadPage(page);
+            ReportPage page = new ReportPage();
+            LoadPage(page);
         }
 
         private void btn_analysis_Click(object sender, EventArgs e)
