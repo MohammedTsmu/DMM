@@ -105,7 +105,7 @@
             // 
             // pageInfo1
             // 
-            this.pageInfo1.Font = new DevExpress.Drawing.DXFont("LBC", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.pageInfo1.Font = new DevExpress.Drawing.DXFont("LBC", 9F, DevExpress.Drawing.DXFontStyle.Bold);
             this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(363.5F, 0F);
             this.pageInfo1.Name = "pageInfo1";
             this.pageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
@@ -117,7 +117,7 @@
             // 
             // pageInfo2
             // 
-            this.pageInfo2.Font = new DevExpress.Drawing.DXFont("LBC", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.pageInfo2.Font = new DevExpress.Drawing.DXFont("LBC", 9F, DevExpress.Drawing.DXFontStyle.Bold);
             this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.pageInfo2.Name = "pageInfo2";
             this.pageInfo2.SizeF = new System.Drawing.SizeF(363.5F, 23F);
