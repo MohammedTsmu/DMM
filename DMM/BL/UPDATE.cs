@@ -44,29 +44,31 @@ namespace DMM.BL
             }
             catch { }
         }
-        //public void CustomerDataUpdate()
-        //{
-        //    try
-        //    {
-        //        db = new DBDMMEntities();
-        //        var SupplierIDList = db.TB_Customers.Select(x => x.ID).ToArray();
-        //        for (int i = 0; i < SupplierIDList.Length; i++)
-        //        {
-        //            id = SupplierIDList[i];
-        //            // Get Debit 
-        //            Debit = (double)db.Debit_Customer.Where(x => x.ID_Supplier == id).Select(x => x.Debit).ToArray().Sum();
-        //            Payment = (double)db.PyamnetCustomers.Where(x => x.ID_Supplier == id).Select(x => x.Payment).ToArray().Sum();
-        //            PaymentRs = Debit - Payment;
-        //           var tBcustomer = db.TB_Customers.Where(x => x.ID == id).FirstOrDefault();
-        //            tBcustomer.Debit = PaymentRs;
-        //            db.Entry(tBcustomer).State = System.Data.Entity.EntityState.Modified;
-        //            db.SaveChanges();
+
+        public void CustomerDataUpdate()
+        {
+            try
+            {
+                db = new DBDMMEntities();
+                var SupplierIDList = db.TB_Customers.Select(x => x.ID).ToArray();
+                for (int i = 0; i < SupplierIDList.Length; i++)
+                {
+                    id = SupplierIDList[i];
+                    // Get Debit 
+                    Debit = (double)db.Debit_Customer.Where(x => x.ID_Supplier == id).Select(x => x.Debit).ToArray().Sum();
+                    //Payment = (double)db.PyamnetCustomers.Where(x => x.ID_Supplier == id).Select(x => x.Payment).ToArray().Sum();
+                    Payment = (double)db.PaymentCustomers.Where(x => x.ID_Supplier == id).Select(x => x.Payment).ToArray().Sum();
+                    PaymentRs = Debit - Payment;
+                    var tBcustomer = db.TB_Customers.Where(x => x.ID == id).FirstOrDefault();
+                    tBcustomer.Debit = PaymentRs;
+                    db.Entry(tBcustomer).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
 
 
-        //        }
+                }
 
-        //    }
-        //    catch { }
-        //}
+            }
+            catch { }
+        }
     }
 }

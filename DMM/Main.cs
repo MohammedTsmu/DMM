@@ -62,13 +62,13 @@ namespace DMM
 
            await Task.Run(()=> uPDATE.SupplierDataUpdate());
 
-            //await Task.Run(() => uPDATE.CustomerDataUpdate());
+            await Task.Run(() => uPDATE.CustomerDataUpdate());
         }
 
         private void btn_customer_Click(object sender, EventArgs e)
         {
-            //Page_Customer page = new Page_Customer();
-            //LoadPage(page);
+            Page_Customer page = new Page_Customer();
+            LoadPage(page);
         }
 
         private void btn_report_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace DMM
 
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
 
         private void btn_about_Click(object sender, EventArgs e)
