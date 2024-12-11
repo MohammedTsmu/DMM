@@ -91,8 +91,8 @@ namespace DMM
 
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            //FRM_Settings fRM_Settings = new FRM_Settings();
-            //fRM_Settings.Show();
+            FRM_Settings fRM_Settings = new FRM_Settings();
+            fRM_Settings.Show();
         }
 
         private void btn_logout_ItemClick(object sender, ItemClickEventArgs e)
@@ -105,6 +105,7 @@ namespace DMM
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+
         }
 
         private void btn_about_Click(object sender, EventArgs e)
@@ -112,6 +113,5 @@ namespace DMM
             //FRM_About fRM_About = new FRM_About();
             //fRM_About.Show();
         }
-       
     }
 }
