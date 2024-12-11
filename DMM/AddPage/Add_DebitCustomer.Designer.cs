@@ -30,7 +30,7 @@ namespace DMM.AddPage
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_DebitSupplier));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_DebitCustomer));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.edt_debit = new System.Windows.Forms.TextBox();
@@ -68,6 +68,7 @@ namespace DMM.AddPage
             this.edt_debit.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_debit.Location = new System.Drawing.Point(28, 368);
             this.edt_debit.Name = "edt_debit";
+            this.edt_debit.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_debit.Size = new System.Drawing.Size(581, 42);
             this.edt_debit.TabIndex = 2;
             this.edt_debit.Text = "0";
@@ -127,7 +128,7 @@ namespace DMM.AddPage
             this.edt_name.TabIndex = 3;
             this.edt_name.Text = "";
             // 
-            // Add_DebitSupplier
+            // Add_DebitCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +142,7 @@ namespace DMM.AddPage
             this.IconOptions.ShowIcon = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Add_DebitSupplier";
+            this.Name = "Add_DebitCustomer";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -49,6 +49,8 @@
     <Reference Include="DevExpress.XtraBars.v24.1" />
     <Reference Include="DevExpress.Sparkline.v24.1.Core" />
     <Reference Include="DevExpress.XtraCharts.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v24.1.UI, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v24.1.Wizard, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v24.1" />
     <Reference Include="DevExpress.Drawing.v24.1" />
     <Reference Include="DevExpress.XtraGauges.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -142,6 +144,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MDMM.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AnaylisisPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AnaylisisPage.Designer.cs">
+      <DependentUpon>AnaylisisPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Page_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AnaylisisPage.resx">
+      <DependentUpon>AnaylisisPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Page_Customer.resx">
       <DependentUpon>Page_Customer.cs</DependentUpon>

@@ -79,8 +79,8 @@ namespace DMM
 
         private void btn_analysis_Click(object sender, EventArgs e)
         {
-            //AnaylisisPage page = new AnaylisisPage();
-            //LoadPage(page);
+            AnaylisisPage page = new AnaylisisPage();
+            LoadPage(page);
         }
 
         private void btn_users_Click(object sender, EventArgs e)
