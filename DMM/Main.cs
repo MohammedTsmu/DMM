@@ -97,9 +97,9 @@ namespace DMM
 
         private void btn_logout_ItemClick(object sender, ItemClickEventArgs e)
         {
-            //AddPage.FRM_UserLogin fRM_User = new AddPage.FRM_UserLogin();
-            //fRM_User.Show();
-            //this.Hide();
+            AddPage.FRM_UserLogin fRM_User = new AddPage.FRM_UserLogin();
+            fRM_User.Show();
+            this.Hide();
         }
 
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -112,6 +112,9 @@ namespace DMM
         {
             //FRM_About fRM_About = new FRM_About();
             //fRM_About.Show();
+
+            AboutBox1 fRM_About = new AboutBox1();
+            fRM_About.Show();
         }
     }
 }

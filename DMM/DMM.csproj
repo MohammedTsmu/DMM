@@ -80,6 +80,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPage\Add_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="AddPage\Add_Users.Designer.cs">
       <DependentUpon>Add_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddPage\FRM_UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\FRM_UserLogin.Designer.cs">
+      <DependentUpon>FRM_UserLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPage\Log_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,12 @@
     </Compile>
     <Compile Include="FRM_Settings.Designer.cs">
       <DependentUpon>FRM_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Start.Designer.cs">
+      <DependentUpon>FRM_Start.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -221,6 +239,9 @@
     <Compile Include="TB_Users.cs">
       <DependentUpon>MDMM.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddPage\Add_Customer.resx">
       <DependentUpon>Add_Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +257,9 @@
     <EmbeddedResource Include="AddPage\Add_Users.resx">
       <DependentUpon>Add_Users.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\FRM_UserLogin.resx">
+      <DependentUpon>FRM_UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddPage\Log_Customer.resx">
       <DependentUpon>Log_Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_Settings.resx">
       <DependentUpon>FRM_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Start.resx">
+      <DependentUpon>FRM_Start.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
