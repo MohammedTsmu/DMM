@@ -85,8 +85,8 @@ namespace DMM
 
         private void btn_users_Click(object sender, EventArgs e)
         {
-            //Page_Users page = new Page_Users();
-            //LoadPage(page);
+            Page_Users page = new Page_Users();
+            LoadPage(page);
         }
 
         private void btn_settings_Click(object sender, EventArgs e)
