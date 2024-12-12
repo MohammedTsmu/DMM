@@ -9,12 +9,13 @@ using System.Windows.Forms;
 
 namespace DMM
 {
-    partial class AboutBox1 : Form
+    partial class FRM_About : Form
     {
-        public AboutBox1()
+        public FRM_About()
         {
             InitializeComponent();
-            this.Text = String.Format("About {0}", AssemblyTitle);
+            //this.Text = String.Format("About {0}", AssemblyTitle);
+            this.Text = String.Format(" {0}", AssemblyTitle) + "  حول برنامج";
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;

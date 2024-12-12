@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DMM")]
-[assembly: AssemblyDescription("Debit Money Managment (برنامج ادارة ديون العملاء والموردين)")]
+[assembly: AssemblyDescription("Debit Money Managment / برنامج ادارة ديون العملاء والموردين")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dr. Mohammed Studio")]
 [assembly: AssemblyProduct("DMM")]

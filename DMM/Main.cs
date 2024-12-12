@@ -110,11 +110,11 @@ namespace DMM
 
         private void btn_about_Click(object sender, EventArgs e)
         {
+            FRM_About fRM_About = new FRM_About();
+            fRM_About.Show();
+
             //FRM_About fRM_About = new FRM_About();
             //fRM_About.Show();
-
-            AboutBox1 fRM_About = new AboutBox1();
-            fRM_About.Show();
         }
     }
 }

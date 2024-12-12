@@ -51,9 +51,8 @@
             this.txt_datetime.ForeColor = System.Drawing.Color.DimGray;
             this.txt_datetime.Location = new System.Drawing.Point(3, 653);
             this.txt_datetime.Name = "txt_datetime";
-            this.txt_datetime.Size = new System.Drawing.Size(341, 67);
+            this.txt_datetime.Size = new System.Drawing.Size(0, 67);
             this.txt_datetime.TabIndex = 3;
-            this.txt_datetime.Text = "Home Page";
             // 
             // txt_companytitle
             // 
