@@ -269,7 +269,7 @@ namespace DMM
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("Main.IconOptions.Icon")));
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Main.IconOptions.Image")));
+            this.IconOptions.Image = global::DMM.Properties.Resources.DMM_PNG;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Main";
             this.NavigationControl = this.accordionControl1;

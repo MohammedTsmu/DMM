@@ -96,7 +96,7 @@ namespace DMM
             // 
             // pic_logo
             // 
-            this.pic_logo.EditValue = ((object)(resources.GetObject("pic_logo.EditValue")));
+            this.pic_logo.EditValue = global::DMM.Properties.Resources.DMM_PNG;
             this.pic_logo.Location = new System.Drawing.Point(173, 223);
             this.pic_logo.Name = "pic_logo";
             this.pic_logo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -107,11 +107,11 @@ namespace DMM
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(513, 259);
+            this.label3.Location = new System.Drawing.Point(476, 248);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 26);
+            this.label3.Size = new System.Drawing.Size(120, 26);
             this.label3.TabIndex = 0;
-            this.label3.Text = "لوكو";
+            this.label3.Text = "صورة الشركة";
             // 
             // txt_desc
             // 

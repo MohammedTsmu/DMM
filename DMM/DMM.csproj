@@ -31,6 +31,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v24.1" />
     <Reference Include="DevExpress.Charts.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -302,6 +306,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report\CustomerReport.resx">
       <DependentUpon>CustomerReport.cs</DependentUpon>
@@ -340,6 +345,8 @@
       <DependentUpon>MDMM.edmx</DependentUpon>
       <LastGenOutput>MDMM.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\DMM_PNG_1.png" />
+    <None Include="Resources\DMM_ICON_1.ico" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

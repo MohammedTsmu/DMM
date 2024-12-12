@@ -29,7 +29,6 @@ namespace DMM
         /// </summary>
 		private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_Start));
             this.progressBarControl = new DevExpress.XtraEditors.MarqueeProgressBarControl();
             this.labelCopyright = new DevExpress.XtraEditors.LabelControl();
             this.labelStatus = new DevExpress.XtraEditors.LabelControl();
@@ -43,7 +42,7 @@ namespace DMM
             this.progressBarControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBarControl.EditValue = 0;
-            this.progressBarControl.Location = new System.Drawing.Point(26, 389);
+            this.progressBarControl.Location = new System.Drawing.Point(26, 523);
             this.progressBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarControl.Name = "progressBarControl";
             this.progressBarControl.Size = new System.Drawing.Size(536, 15);
@@ -52,7 +51,7 @@ namespace DMM
             // labelCopyright
             // 
             this.labelCopyright.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelCopyright.Location = new System.Drawing.Point(26, 412);
+            this.labelCopyright.Location = new System.Drawing.Point(26, 546);
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(4);
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(54, 16);
@@ -66,7 +65,7 @@ namespace DMM
             this.labelStatus.Appearance.Options.UseTextOptions = true;
             this.labelStatus.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelStatus.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelStatus.Location = new System.Drawing.Point(180, 344);
+            this.labelStatus.Location = new System.Drawing.Point(180, 478);
             this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 1);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(382, 26);
@@ -76,25 +75,25 @@ namespace DMM
             // peImage
             // 
             this.peImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.peImage.EditValue = ((object)(resources.GetObject("peImage.EditValue")));
+            this.peImage.EditValue = global::DMM.Properties.Resources.DMM_PNG;
             this.peImage.Location = new System.Drawing.Point(1, 1);
             this.peImage.Margin = new System.Windows.Forms.Padding(4);
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;
-            this.peImage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.peImage.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.peImage.Properties.Appearance.Options.UseBackColor = true;
             this.peImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peImage.Properties.ShowMenu = false;
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.peImage.Properties.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.None;
-            this.peImage.Size = new System.Drawing.Size(598, 323);
+            this.peImage.Size = new System.Drawing.Size(598, 469);
             this.peImage.TabIndex = 9;
             // 
             // FRM_Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 447);
+            this.ClientSize = new System.Drawing.Size(600, 583);
             this.Controls.Add(this.peImage);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelCopyright);

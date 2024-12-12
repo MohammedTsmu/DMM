@@ -76,16 +76,36 @@ namespace DMM
             }
         }
 
+        //public string AssemblyCopyright
+        //{
+        //    get
+        //    {
+        //        object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
+        //        if (attributes.Length == 0)
+        //        {
+        //            return "";
+        //        }
+        //        return ((AssemblyCopyrightAttribute)attributes[0]).Copyright;
+        //    }
+        //}
+
         public string AssemblyCopyright
         {
             get
             {
+                // Retrieve the copyright attribute from the assembly
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
                 if (attributes.Length == 0)
                 {
                     return "";
                 }
-                return ((AssemblyCopyrightAttribute)attributes[0]).Copyright;
+
+                // Extract the static copyright value
+                string staticCopyright = ((AssemblyCopyrightAttribute)attributes[0]).Copyright;
+
+                // Append the current year dynamically to create a range
+                int currentYear = DateTime.Now.Year;
+                return staticCopyright + "-" + currentYear.ToString();
             }
         }
 

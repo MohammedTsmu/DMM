@@ -49,7 +49,7 @@ namespace DMM.AddPage
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(202, 48);
+            this.label2.Location = new System.Drawing.Point(196, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 36);
             this.label2.TabIndex = 0;
@@ -58,7 +58,7 @@ namespace DMM.AddPage
             // edt_username
             // 
             this.edt_username.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edt_username.Location = new System.Drawing.Point(82, 88);
+            this.edt_username.Location = new System.Drawing.Point(76, 88);
             this.edt_username.Name = "edt_username";
             this.edt_username.Size = new System.Drawing.Size(417, 42);
             this.edt_username.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace DMM.AddPage
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(225, 165);
+            this.label3.Location = new System.Drawing.Point(219, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 36);
             this.label3.TabIndex = 0;
@@ -79,7 +79,7 @@ namespace DMM.AddPage
             // edt_password
             // 
             this.edt_password.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edt_password.Location = new System.Drawing.Point(82, 204);
+            this.edt_password.Location = new System.Drawing.Point(76, 204);
             this.edt_password.Name = "edt_password";
             this.edt_password.Size = new System.Drawing.Size(417, 42);
             this.edt_password.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace DMM.AddPage
             this.btn_add.Appearance.Options.UseFont = true;
             this.btn_add.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.ImageOptions.Image")));
             this.btn_add.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.btn_add.Location = new System.Drawing.Point(163, 308);
+            this.btn_add.Location = new System.Drawing.Point(157, 308);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(259, 58);
             this.btn_add.TabIndex = 4;
@@ -110,38 +110,41 @@ namespace DMM.AddPage
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.btn_add);
             this.panel2.Controls.Add(this.edt_password);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.edt_username);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(235, 119);
+            this.panel2.Location = new System.Drawing.Point(132, 157);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(568, 422);
             this.panel2.TabIndex = 4;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("LBC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(356, 23);
+            this.label1.Location = new System.Drawing.Point(132, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 64);
+            this.label1.Size = new System.Drawing.Size(568, 81);
             this.label1.TabIndex = 0;
             this.label1.Text = "تسجيل الدخول";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FRM_UserLogin
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
-            this.ClientSize = new System.Drawing.Size(1105, 643);
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageStore = global::DMM.Properties.Resources.DMM_PNG;
+            this.ClientSize = new System.Drawing.Size(833, 643);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.ShowIcon = false;
             this.MaximizeBox = false;
@@ -156,7 +159,6 @@ namespace DMM.AddPage
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
