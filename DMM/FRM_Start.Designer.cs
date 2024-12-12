@@ -42,19 +42,21 @@ namespace DMM
             this.progressBarControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBarControl.EditValue = 0;
-            this.progressBarControl.Location = new System.Drawing.Point(26, 523);
+            this.progressBarControl.Location = new System.Drawing.Point(26, 510);
             this.progressBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarControl.Name = "progressBarControl";
-            this.progressBarControl.Size = new System.Drawing.Size(536, 15);
+            this.progressBarControl.Size = new System.Drawing.Size(592, 15);
             this.progressBarControl.TabIndex = 5;
             // 
             // labelCopyright
             // 
+            this.labelCopyright.Appearance.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCopyright.Appearance.Options.UseFont = true;
             this.labelCopyright.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelCopyright.Location = new System.Drawing.Point(26, 546);
+            this.labelCopyright.Location = new System.Drawing.Point(26, 533);
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(4);
             this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(54, 16);
+            this.labelCopyright.Size = new System.Drawing.Size(83, 22);
             this.labelCopyright.TabIndex = 6;
             this.labelCopyright.Text = "Copyright";
             // 
@@ -65,7 +67,7 @@ namespace DMM
             this.labelStatus.Appearance.Options.UseTextOptions = true;
             this.labelStatus.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelStatus.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelStatus.Location = new System.Drawing.Point(180, 478);
+            this.labelStatus.Location = new System.Drawing.Point(180, 465);
             this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 1);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(382, 26);
@@ -86,14 +88,14 @@ namespace DMM
             this.peImage.Properties.ShowMenu = false;
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.peImage.Properties.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.None;
-            this.peImage.Size = new System.Drawing.Size(598, 470);
+            this.peImage.Size = new System.Drawing.Size(654, 456);
             this.peImage.TabIndex = 9;
             // 
             // FRM_Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 585);
+            this.ClientSize = new System.Drawing.Size(656, 568);
             this.Controls.Add(this.peImage);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelCopyright);
