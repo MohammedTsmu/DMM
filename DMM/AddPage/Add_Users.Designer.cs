@@ -54,7 +54,7 @@ namespace DMM.AddPage
             this.label1.Location = new System.Drawing.Point(271, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 36);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 7;
             this.label1.Text = "الاسم الكامل";
             // 
             // edt_name
@@ -62,6 +62,7 @@ namespace DMM.AddPage
             this.edt_name.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_name.Location = new System.Drawing.Point(41, 102);
             this.edt_name.Name = "edt_name";
+            this.edt_name.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_name.Size = new System.Drawing.Size(581, 42);
             this.edt_name.TabIndex = 1;
             this.edt_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -73,7 +74,7 @@ namespace DMM.AddPage
             this.label2.Location = new System.Drawing.Point(271, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 36);
-            this.label2.TabIndex = 0;
+            this.label2.TabIndex = 8;
             this.label2.Text = "اسم المستخدم";
             // 
             // edt_username
@@ -81,6 +82,7 @@ namespace DMM.AddPage
             this.edt_username.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_username.Location = new System.Drawing.Point(41, 222);
             this.edt_username.Name = "edt_username";
+            this.edt_username.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_username.Size = new System.Drawing.Size(581, 42);
             this.edt_username.TabIndex = 2;
             this.edt_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -92,7 +94,7 @@ namespace DMM.AddPage
             this.label3.Location = new System.Drawing.Point(283, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 36);
-            this.label3.TabIndex = 0;
+            this.label3.TabIndex = 9;
             this.label3.Text = "كلمة السر";
             // 
             // edt_password
@@ -100,6 +102,7 @@ namespace DMM.AddPage
             this.edt_password.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_password.Location = new System.Drawing.Point(41, 338);
             this.edt_password.Name = "edt_password";
+            this.edt_password.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_password.Size = new System.Drawing.Size(581, 42);
             this.edt_password.TabIndex = 3;
             this.edt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -112,7 +115,7 @@ namespace DMM.AddPage
             this.panel1.Location = new System.Drawing.Point(0, 563);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(659, 80);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 999;
             // 
             // btn_addclose
             // 
@@ -124,7 +127,7 @@ namespace DMM.AddPage
             this.btn_addclose.Location = new System.Drawing.Point(12, 10);
             this.btn_addclose.Name = "btn_addclose";
             this.btn_addclose.Size = new System.Drawing.Size(353, 58);
-            this.btn_addclose.TabIndex = 5;
+            this.btn_addclose.TabIndex = 6;
             this.btn_addclose.Text = "اضافة+غلق";
             this.btn_addclose.Click += new System.EventHandler(this.btn_addclose_Click);
             // 
@@ -138,7 +141,7 @@ namespace DMM.AddPage
             this.btn_add.Location = new System.Drawing.Point(488, 10);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(150, 58);
-            this.btn_add.TabIndex = 4;
+            this.btn_add.TabIndex = 5;
             this.btn_add.Text = "اضافة";
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
@@ -156,7 +159,7 @@ namespace DMM.AddPage
             this.label4.Location = new System.Drawing.Point(283, 410);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 36);
-            this.label4.TabIndex = 0;
+            this.label4.TabIndex = 10;
             this.label4.Text = "الصلاحية";
             // 
             // edt_role

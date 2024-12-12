@@ -68,6 +68,7 @@ namespace DMM.Pages
                     add.edt_name.Text = tbAdd.FullName;
                     add.edt_address.Text = tbAdd.Address;
                     add.edt_phone.Text = tbAdd.Phone;
+                    add.Text = "تعديل بيانات " + tbAdd.FullName;
                     add.page = this;
                     add.Show();
 
@@ -130,8 +131,8 @@ namespace DMM.Pages
                     db = new DBDMMEntities();
                     tbAdd = db.TB_Suppliers.Where(x => x.ID == id).FirstOrDefault();
                     DMM.AddPage.Log_Supplier add = new AddPage.Log_Supplier();
-                    add.txt_id.Text = id.ToString();
-                    add.txt_name.Text = tbAdd.FullName.ToString();
+                    add.txt_id1.Text = id.ToString();
+                    add.txt_name1.Text = tbAdd.FullName.ToString();
                     add.Show();
 
                 }

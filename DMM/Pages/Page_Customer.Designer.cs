@@ -61,7 +61,7 @@ namespace DMM.Pages
             this.panel1.Location = new System.Drawing.Point(0, 477);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1028, 110);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 999;
             // 
             // btn_log
             // 
@@ -73,7 +73,7 @@ namespace DMM.Pages
             this.btn_log.Location = new System.Drawing.Point(18, 15);
             this.btn_log.Name = "btn_log";
             this.btn_log.Size = new System.Drawing.Size(264, 80);
-            this.btn_log.TabIndex = 0;
+            this.btn_log.TabIndex = 6;
             this.btn_log.Text = "عرض السجل";
             this.btn_log.Click += new System.EventHandler(this.btn_log_Click);
             // 
@@ -87,7 +87,7 @@ namespace DMM.Pages
             this.btn_update.Location = new System.Drawing.Point(288, 15);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(140, 80);
-            this.btn_update.TabIndex = 0;
+            this.btn_update.TabIndex = 5;
             this.btn_update.Text = "تحديث";
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
@@ -101,7 +101,7 @@ namespace DMM.Pages
             this.btn_print.Location = new System.Drawing.Point(434, 15);
             this.btn_print.Name = "btn_print";
             this.btn_print.Size = new System.Drawing.Size(140, 80);
-            this.btn_print.TabIndex = 0;
+            this.btn_print.TabIndex = 4;
             this.btn_print.Text = "طباعة";
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
@@ -115,7 +115,7 @@ namespace DMM.Pages
             this.btn_edit.Location = new System.Drawing.Point(580, 15);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(140, 80);
-            this.btn_edit.TabIndex = 0;
+            this.btn_edit.TabIndex = 3;
             this.btn_edit.Text = "تعديل";
             this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
@@ -129,7 +129,7 @@ namespace DMM.Pages
             this.btn_delete.Location = new System.Drawing.Point(726, 15);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(140, 80);
-            this.btn_delete.TabIndex = 0;
+            this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "حذف";
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
@@ -143,7 +143,7 @@ namespace DMM.Pages
             this.btn_add.Location = new System.Drawing.Point(872, 15);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(140, 80);
-            this.btn_add.TabIndex = 0;
+            this.btn_add.TabIndex = 1;
             this.btn_add.Text = "اضافة";
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
@@ -156,7 +156,8 @@ namespace DMM.Pages
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridControl1.Size = new System.Drawing.Size(1028, 477);
-            this.gridControl1.TabIndex = 1;
+            this.gridControl1.TabIndex = 999;
+            this.gridControl1.TabStop = false;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 

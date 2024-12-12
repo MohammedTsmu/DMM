@@ -42,16 +42,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_totoaldebit = new System.Windows.Forms.Label();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -195,7 +195,7 @@
             xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl1.Diagram = xyDiagram1;
-            this.chartControl1.Location = new System.Drawing.Point(340, 966);
+            this.chartControl1.Location = new System.Drawing.Point(189, 966);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Office";
             series1.ArgumentDataMember = "DateT";
@@ -205,7 +205,7 @@
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chartControl1.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
-            this.chartControl1.Size = new System.Drawing.Size(686, 377);
+            this.chartControl1.Size = new System.Drawing.Size(837, 427);
             this.chartControl1.TabIndex = 1;
             chartTitle1.DXFont = new DevExpress.Drawing.DXFont("LBC", 18F, DevExpress.Drawing.DXFontStyle.Bold);
             chartTitle1.Text = "ديون العملاء";
@@ -227,10 +227,10 @@
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }

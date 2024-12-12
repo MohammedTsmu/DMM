@@ -67,12 +67,12 @@ namespace DMM.Pages
                     tbAdd = db.TB_Users.Where(x => x.ID == id).FirstOrDefault();
                     DMM.AddPage.Add_Users add = new AddPage.Add_Users();
                     add.id = id;
-                    add.btn_add.Text = "تعديل";
-                    add.btn_addclose.Text = " غلق +تعديل";
                     add.edt_name.Text = tbAdd.FullName;
                     add.edt_username.Text = tbAdd.UserName;
                     add.edt_password.Text = tbAdd.Password;
                     add.edt_role.Text = tbAdd.Role;
+                    add.btn_add.Text = "تعديل";
+                    add.btn_addclose.Text = " غلق +تعديل";
                     add.page = this;
                     add.Show();
 
@@ -128,4 +128,3 @@ namespace DMM.Pages
 
     }
 }
-

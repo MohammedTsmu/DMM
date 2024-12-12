@@ -61,7 +61,7 @@ namespace DMM
             this.groupBox1.Location = new System.Drawing.Point(23, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(607, 360);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 999;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "عام";
             // 
@@ -90,7 +90,7 @@ namespace DMM
             this.pn_progress.Location = new System.Drawing.Point(127, 87);
             this.pn_progress.Name = "pn_progress";
             this.pn_progress.Size = new System.Drawing.Size(352, 187);
-            this.pn_progress.TabIndex = 3;
+            this.pn_progress.TabIndex = 999;
             this.pn_progress.Text = "الرجاء الانتظار";
             this.pn_progress.Visible = false;
             // 
@@ -102,7 +102,7 @@ namespace DMM
             this.pic_logo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pic_logo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pic_logo.Size = new System.Drawing.Size(191, 121);
-            this.pic_logo.TabIndex = 2;
+            this.pic_logo.TabIndex = 999;
             // 
             // label3
             // 
@@ -119,7 +119,7 @@ namespace DMM
             this.txt_desc.Multiline = true;
             this.txt_desc.Name = "txt_desc";
             this.txt_desc.Size = new System.Drawing.Size(450, 123);
-            this.txt_desc.TabIndex = 1;
+            this.txt_desc.TabIndex = 2;
             this.txt_desc.Text = "وصف عام ";
             this.txt_desc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -159,7 +159,7 @@ namespace DMM
             this.groupBox2.Location = new System.Drawing.Point(23, 395);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(607, 143);
-            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabIndex = 999;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "قاعدة البيانات";
             // 
@@ -172,7 +172,7 @@ namespace DMM
             this.btn_restore.Location = new System.Drawing.Point(20, 59);
             this.btn_restore.Name = "btn_restore";
             this.btn_restore.Size = new System.Drawing.Size(256, 58);
-            this.btn_restore.TabIndex = 5;
+            this.btn_restore.TabIndex = 4;
             this.btn_restore.Text = "استعادة النسخة الاحتياطية";
             this.btn_restore.Click += new System.EventHandler(this.btn_restore_Click);
             // 
@@ -185,7 +185,7 @@ namespace DMM
             this.btn_backup.Location = new System.Drawing.Point(345, 59);
             this.btn_backup.Name = "btn_backup";
             this.btn_backup.Size = new System.Drawing.Size(256, 58);
-            this.btn_backup.TabIndex = 5;
+            this.btn_backup.TabIndex = 3;
             this.btn_backup.Text = "اخذ نسخة احتياطية";
             this.btn_backup.Click += new System.EventHandler(this.btn_backup_Click);
             // 
@@ -210,7 +210,7 @@ namespace DMM
             this.btn_save.Location = new System.Drawing.Point(389, 568);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(256, 58);
-            this.btn_save.TabIndex = 5;
+            this.btn_save.TabIndex = 6;
             this.btn_save.Text = "حفظ";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 

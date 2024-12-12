@@ -68,7 +68,6 @@ namespace DMM.AddPage
                     Phone = edt_phone.Text,
                     DateT = DateTime.Now,
                     Debit=0
-                    
                 };
                 db.Entry(tbAdd).State = System.Data.Entity.EntityState.Added;
                 db.SaveChanges();
@@ -124,7 +123,7 @@ namespace DMM.AddPage
         // Clear Value 
         private void ClearData()
         {
-            edt_address.Text = edt_name.Text = edt_name.Text = "";
+            edt_address.Text = edt_name.Text = edt_phone.Text = "";
         }
 
         private void Add_Customer_Load(object sender, EventArgs e)

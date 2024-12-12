@@ -22,7 +22,6 @@ namespace DMM.Pages
         {
             InitializeComponent();
             LoadData();
-
         }
 
 
@@ -69,6 +68,7 @@ namespace DMM.Pages
                     add.edt_name.Text = tbAdd.FullName;
                     add.edt_address.Text = tbAdd.Address;
                     add.edt_phone.Text = tbAdd.Phone;
+                    add.Text = "تعديل بيانات " + tbAdd.FullName;
                     add.page = this;
                     add.Show();
 

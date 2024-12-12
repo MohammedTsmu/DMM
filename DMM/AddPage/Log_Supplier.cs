@@ -43,7 +43,7 @@ namespace DMM.AddPage
         {
             try
             {
-                id = Convert.ToInt32(txt_id.Text);
+                id = Convert.ToInt32(txt_id1.Text);
                 db = new DBDMMEntities();
                 gridControl1.DataSource = db.Debit_Suppliers.Where(x => x.ID_Supplier == id).ToList();
             }
@@ -57,7 +57,7 @@ namespace DMM.AddPage
         {
             try
             {
-                id = Convert.ToInt32(txt_id.Text);
+                id = Convert.ToInt32(txt_id1.Text);
                 db = new DBDMMEntities();
                 gridControl2.DataSource = db.PaymentSuppliers.Where(x => x.ID_Supplier == id).ToList();
             }
@@ -77,8 +77,8 @@ namespace DMM.AddPage
         // Add Debit Data Event
         private void btn_adddebit_Click(object sender, EventArgs e)
         {
-            id = Convert.ToInt32(txt_id.Text);
-            var SupplierName = txt_name.Text;
+            id = Convert.ToInt32(txt_id1.Text);
+            var SupplierName = txt_name1.Text;
             DMM.AddPage.Add_DebitSupplier add = new AddPage.Add_DebitSupplier();
             add.id = 0;
             add.btn_add.Text = "اضافة";
@@ -98,8 +98,8 @@ namespace DMM.AddPage
                 if (id > 0)
                 {
                     db = new DBDMMEntities();
-                    var supplierid = Convert.ToInt32(txt_id.Text);
-                    var SupplierName = txt_name.Text;
+                    var supplierid = Convert.ToInt32(txt_id1.Text);
+                    var SupplierName = txt_name1.Text;
                     DMM.AddPage.Add_DebitSupplier add = new AddPage.Add_DebitSupplier();
                     add.id = id;
                     add.btn_add.Text = "تعديل";
@@ -190,8 +190,8 @@ namespace DMM.AddPage
             try
             {
                 db = new DBDMMEntities();
-                SupplierID = Convert.ToInt32(txt_id.Text);
-                var SupplierName = txt_name.Text;
+                SupplierID = Convert.ToInt32(txt_id1.Text);
+                var SupplierName = txt_name1.Text;
                 var tbpayment = new PaymentSupplier
                 {
                     Payment = Convert.ToDouble(PaymnetValue),
@@ -241,8 +241,8 @@ namespace DMM.AddPage
                 if (id > 0)
                 {
                     db = new DBDMMEntities();
-                    SupplierID = Convert.ToInt32(txt_id.Text);
-                    var SupplierName = txt_name.Text;
+                    SupplierID = Convert.ToInt32(txt_id1.Text);
+                    var SupplierName = txt_name1.Text;
                     var tbpayment = new PaymentSupplier
                     {
                         ID = id,
@@ -312,7 +312,7 @@ namespace DMM.AddPage
         {
             try
             {
-                id = Convert.ToInt32(txt_id.Text);
+                id = Convert.ToInt32(txt_id1.Text);
                 db = new DBDMMEntities();
                 // Get Debit 
                 Debit = (double)db.Debit_Suppliers.Where(x => x.ID_Supplier == id).Select(x => x.Debit).ToArray().Sum();
@@ -360,7 +360,7 @@ namespace DMM.AddPage
         {
             try
             {
-                id = Convert.ToInt16(txt_id.Text);
+                id = Convert.ToInt16(txt_id1.Text);
                 db = new DBDMMEntities();
                 var Debit_List = db.Debit_Suppliers.Select(x => x.ID).ToArray();
 
@@ -381,7 +381,7 @@ namespace DMM.AddPage
         {
             try
             {
-                id = Convert.ToInt16(txt_id.Text);
+                id = Convert.ToInt16(txt_id1.Text);
                 db = new DBDMMEntities();
                 var Debit_List = db.PaymentSuppliers.Select(x => x.ID).ToArray();
 

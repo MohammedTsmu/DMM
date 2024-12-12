@@ -31,11 +31,12 @@ namespace DMM.AddPage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Log_Customer));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_id = new System.Windows.Forms.Label();
             this.txt_paymentrs = new System.Windows.Forms.Label();
             this.txt_payment = new System.Windows.Forms.Label();
             this.txt_debit = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.txt_name = new System.Windows.Forms.Label();
+            this.txt_id = new System.Windows.Forms.Label();
             this.btn_logclear = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
@@ -61,6 +62,7 @@ namespace DMM.AddPage
             this.btn_adddebit = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -73,28 +75,16 @@ namespace DMM.AddPage
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txt_id);
             this.panel1.Controls.Add(this.txt_paymentrs);
             this.panel1.Controls.Add(this.txt_payment);
             this.panel1.Controls.Add(this.txt_debit);
-            this.panel1.Controls.Add(this.txt_name);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btn_logclear);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 564);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1142, 112);
             this.panel1.TabIndex = 0;
-            // 
-            // txt_id
-            // 
-            this.txt_id.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txt_id.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id.Location = new System.Drawing.Point(969, 25);
-            this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(90, 45);
-            this.txt_id.TabIndex = 8;
-            this.txt_id.Text = "0";
-            this.txt_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_paymentrs
             // 
@@ -103,7 +93,7 @@ namespace DMM.AddPage
             this.txt_paymentrs.Dock = System.Windows.Forms.DockStyle.Right;
             this.txt_paymentrs.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_paymentrs.ForeColor = System.Drawing.Color.White;
-            this.txt_paymentrs.Location = new System.Drawing.Point(290, 0);
+            this.txt_paymentrs.Location = new System.Drawing.Point(187, 0);
             this.txt_paymentrs.Name = "txt_paymentrs";
             this.txt_paymentrs.Size = new System.Drawing.Size(200, 112);
             this.txt_paymentrs.TabIndex = 7;
@@ -117,7 +107,7 @@ namespace DMM.AddPage
             this.txt_payment.Dock = System.Windows.Forms.DockStyle.Right;
             this.txt_payment.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_payment.ForeColor = System.Drawing.Color.White;
-            this.txt_payment.Location = new System.Drawing.Point(490, 0);
+            this.txt_payment.Location = new System.Drawing.Point(387, 0);
             this.txt_payment.Name = "txt_payment";
             this.txt_payment.Size = new System.Drawing.Size(200, 112);
             this.txt_payment.TabIndex = 6;
@@ -131,30 +121,50 @@ namespace DMM.AddPage
             this.txt_debit.Dock = System.Windows.Forms.DockStyle.Right;
             this.txt_debit.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_debit.ForeColor = System.Drawing.Color.White;
-            this.txt_debit.Location = new System.Drawing.Point(690, 0);
+            this.txt_debit.Location = new System.Drawing.Point(587, 0);
             this.txt_debit.Name = "txt_debit";
             this.txt_debit.Size = new System.Drawing.Size(200, 112);
             this.txt_debit.TabIndex = 5;
             this.txt_debit.Text = "الديون: 10";
             this.txt_debit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.txt_name);
+            this.panel6.Controls.Add(this.txt_id);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(787, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(355, 112);
+            this.panel6.TabIndex = 7;
+            // 
             // txt_name
             // 
             this.txt_name.BackColor = System.Drawing.Color.Transparent;
-            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_name.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txt_name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_name.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_name.Location = new System.Drawing.Point(890, 0);
+            this.txt_name.Location = new System.Drawing.Point(0, 30);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(252, 112);
+            this.txt_name.Size = new System.Drawing.Size(355, 82);
             this.txt_name.TabIndex = 2;
-            this.txt_name.Text = "اسم المورد";
-            this.txt_name.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.txt_name.Text = "اسم العميل";
+            this.txt_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_id
+            // 
+            this.txt_id.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_id.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id.Location = new System.Drawing.Point(0, 0);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(355, 30);
+            this.txt_id.TabIndex = 8;
+            this.txt_id.Text = "0";
+            this.txt_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_logclear
             // 
             this.btn_logclear.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_logclear.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btn_logclear.Appearance.BackColor = System.Drawing.Color.DarkRed;
             this.btn_logclear.Appearance.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logclear.Appearance.Options.UseBackColor = true;
             this.btn_logclear.Appearance.Options.UseFont = true;
@@ -163,7 +173,7 @@ namespace DMM.AddPage
             this.btn_logclear.Location = new System.Drawing.Point(8, 25);
             this.btn_logclear.Name = "btn_logclear";
             this.btn_logclear.Size = new System.Drawing.Size(170, 75);
-            this.btn_logclear.TabIndex = 4;
+            this.btn_logclear.TabIndex = 9;
             this.btn_logclear.Text = "تنظيف السجل";
             this.btn_logclear.Click += new System.EventHandler(this.btn_logclear_Click);
             // 
@@ -186,7 +196,8 @@ namespace DMM.AddPage
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.Size = new System.Drawing.Size(535, 420);
-            this.gridControl2.TabIndex = 6;
+            this.gridControl2.TabIndex = 999;
+            this.gridControl2.TabStop = false;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
             // 
@@ -437,10 +448,10 @@ namespace DMM.AddPage
             this.btn_paymentprint.Appearance.Options.UseFont = true;
             this.btn_paymentprint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_paymentprint.ImageOptions.Image")));
             this.btn_paymentprint.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btn_paymentprint.Location = new System.Drawing.Point(8, 12);
+            this.btn_paymentprint.Location = new System.Drawing.Point(36, 12);
             this.btn_paymentprint.Name = "btn_paymentprint";
             this.btn_paymentprint.Size = new System.Drawing.Size(120, 75);
-            this.btn_paymentprint.TabIndex = 1;
+            this.btn_paymentprint.TabIndex = 8;
             this.btn_paymentprint.Text = "طباعة";
             this.btn_paymentprint.Click += new System.EventHandler(this.btn_paymentprint_Click);
             // 
@@ -454,7 +465,7 @@ namespace DMM.AddPage
             this.btn_paymentedit.Location = new System.Drawing.Point(138, 12);
             this.btn_paymentedit.Name = "btn_paymentedit";
             this.btn_paymentedit.Size = new System.Drawing.Size(120, 75);
-            this.btn_paymentedit.TabIndex = 2;
+            this.btn_paymentedit.TabIndex = 7;
             this.btn_paymentedit.Text = "تعديل";
             this.btn_paymentedit.Click += new System.EventHandler(this.btn_paymentedit_Click);
             // 
@@ -468,7 +479,7 @@ namespace DMM.AddPage
             this.btn_paymentdelete.Location = new System.Drawing.Point(268, 12);
             this.btn_paymentdelete.Name = "btn_paymentdelete";
             this.btn_paymentdelete.Size = new System.Drawing.Size(120, 75);
-            this.btn_paymentdelete.TabIndex = 3;
+            this.btn_paymentdelete.TabIndex = 6;
             this.btn_paymentdelete.Text = "حذف";
             this.btn_paymentdelete.Click += new System.EventHandler(this.btn_paymentdelete_Click);
             // 
@@ -482,7 +493,7 @@ namespace DMM.AddPage
             this.btn_paymentadd.Location = new System.Drawing.Point(398, 12);
             this.btn_paymentadd.Name = "btn_paymentadd";
             this.btn_paymentadd.Size = new System.Drawing.Size(120, 75);
-            this.btn_paymentadd.TabIndex = 4;
+            this.btn_paymentadd.TabIndex = 5;
             this.btn_paymentadd.Text = "اضافة";
             this.btn_paymentadd.Click += new System.EventHandler(this.btn_paymentadd_Click);
             // 
@@ -517,7 +528,8 @@ namespace DMM.AddPage
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(607, 420);
-            this.gridControl1.TabIndex = 3;
+            this.gridControl1.TabIndex = 999;
+            this.gridControl1.TabStop = false;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -783,7 +795,7 @@ namespace DMM.AddPage
             this.btn_print.Location = new System.Drawing.Point(44, 12);
             this.btn_print.Name = "btn_print";
             this.btn_print.Size = new System.Drawing.Size(120, 75);
-            this.btn_print.TabIndex = 1;
+            this.btn_print.TabIndex = 4;
             this.btn_print.Text = "طباعة";
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
@@ -797,7 +809,7 @@ namespace DMM.AddPage
             this.btn_edtdebit.Location = new System.Drawing.Point(174, 12);
             this.btn_edtdebit.Name = "btn_edtdebit";
             this.btn_edtdebit.Size = new System.Drawing.Size(120, 75);
-            this.btn_edtdebit.TabIndex = 2;
+            this.btn_edtdebit.TabIndex = 3;
             this.btn_edtdebit.Text = "تعديل";
             this.btn_edtdebit.Click += new System.EventHandler(this.btn_edtdebit_Click);
             // 
@@ -811,7 +823,7 @@ namespace DMM.AddPage
             this.btn_delete.Location = new System.Drawing.Point(304, 12);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(120, 75);
-            this.btn_delete.TabIndex = 3;
+            this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "حذف";
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
@@ -825,7 +837,7 @@ namespace DMM.AddPage
             this.btn_adddebit.Location = new System.Drawing.Point(434, 12);
             this.btn_adddebit.Name = "btn_adddebit";
             this.btn_adddebit.Size = new System.Drawing.Size(120, 75);
-            this.btn_adddebit.TabIndex = 4;
+            this.btn_adddebit.TabIndex = 1;
             this.btn_adddebit.Text = "اضافة";
             this.btn_adddebit.Click += new System.EventHandler(this.btn_adddebit_Click);
             // 
@@ -859,6 +871,7 @@ namespace DMM.AddPage
             this.Activated += new System.EventHandler(this.Log_Supplier_Activated);
             this.Load += new System.EventHandler(this.Log_Supplier_Load);
             this.panel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
@@ -903,5 +916,6 @@ namespace DMM.AddPage
         private DevExpress.XtraGrid.Columns.GridColumn colFullName;
         private DevExpress.XtraGrid.Columns.GridColumn colDebit;
         private DevExpress.XtraGrid.Columns.GridColumn colDateT;
+        private System.Windows.Forms.Panel panel6;
     }
 }

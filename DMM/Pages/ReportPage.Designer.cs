@@ -47,7 +47,7 @@
             this.btn_customerreoprt.Location = new System.Drawing.Point(58, 60);
             this.btn_customerreoprt.Name = "btn_customerreoprt";
             this.btn_customerreoprt.Size = new System.Drawing.Size(199, 75);
-            this.btn_customerreoprt.TabIndex = 5;
+            this.btn_customerreoprt.TabIndex = 2;
             this.btn_customerreoprt.Text = "تقرير ديون العملاء";
             this.btn_customerreoprt.Click += new System.EventHandler(this.btn_customerreoprt_Click);
             // 
@@ -73,7 +73,7 @@
             this.btn_supplierreport.Location = new System.Drawing.Point(360, 60);
             this.btn_supplierreport.Name = "btn_supplierreport";
             this.btn_supplierreport.Size = new System.Drawing.Size(199, 75);
-            this.btn_supplierreport.TabIndex = 5;
+            this.btn_supplierreport.TabIndex = 1;
             this.btn_supplierreport.Text = "تقرير ديون الموردين";
             this.btn_supplierreport.Click += new System.EventHandler(this.btn_supplierreport_Click);
             // 
@@ -84,7 +84,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ReportPage";
             this.Size = new System.Drawing.Size(1061, 635);
             this.panel1.ResumeLayout(false);

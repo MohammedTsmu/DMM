@@ -110,7 +110,7 @@ namespace DMM.AddPage
             this.panel1.Location = new System.Drawing.Point(0, 433);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(673, 80);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 999;
             // 
             // btn_addclose
             // 
@@ -119,7 +119,8 @@ namespace DMM.AddPage
             this.btn_addclose.Appearance.Options.UseFont = true;
             this.btn_addclose.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.btn_addclose.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_addclose.ImageOptions.SvgImage")));
-            this.btn_addclose.Location = new System.Drawing.Point(12, 10);
+            this.btn_addclose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_addclose.Location = new System.Drawing.Point(22, 10);
             this.btn_addclose.Name = "btn_addclose";
             this.btn_addclose.Size = new System.Drawing.Size(167, 58);
             this.btn_addclose.TabIndex = 5;

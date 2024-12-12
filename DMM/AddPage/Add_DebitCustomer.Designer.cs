@@ -69,7 +69,7 @@ namespace DMM.AddPage
             this.edt_debit.Location = new System.Drawing.Point(28, 368);
             this.edt_debit.Name = "edt_debit";
             this.edt_debit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.edt_debit.Size = new System.Drawing.Size(581, 42);
+            this.edt_debit.Size = new System.Drawing.Size(609, 42);
             this.edt_debit.TabIndex = 2;
             this.edt_debit.Text = "0";
             this.edt_debit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -82,7 +82,7 @@ namespace DMM.AddPage
             this.panel1.Location = new System.Drawing.Point(0, 433);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(673, 80);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 999;
             // 
             // btn_addclose
             // 
@@ -94,7 +94,7 @@ namespace DMM.AddPage
             this.btn_addclose.Location = new System.Drawing.Point(12, 10);
             this.btn_addclose.Name = "btn_addclose";
             this.btn_addclose.Size = new System.Drawing.Size(167, 58);
-            this.btn_addclose.TabIndex = 5;
+            this.btn_addclose.TabIndex = 4;
             this.btn_addclose.Text = "اضافة+غلق";
             this.btn_addclose.Click += new System.EventHandler(this.btn_addclose_Click);
             // 
@@ -108,7 +108,7 @@ namespace DMM.AddPage
             this.btn_add.Location = new System.Drawing.Point(502, 10);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(150, 58);
-            this.btn_add.TabIndex = 4;
+            this.btn_add.TabIndex = 3;
             this.btn_add.Text = "اضافة";
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
@@ -125,7 +125,7 @@ namespace DMM.AddPage
             this.edt_name.Location = new System.Drawing.Point(28, 108);
             this.edt_name.Name = "edt_name";
             this.edt_name.Size = new System.Drawing.Size(609, 218);
-            this.edt_name.TabIndex = 3;
+            this.edt_name.TabIndex = 1;
             this.edt_name.Text = "";
             // 
             // Add_DebitCustomer
