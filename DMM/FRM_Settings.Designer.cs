@@ -96,7 +96,7 @@ namespace DMM
             // 
             // pic_logo
             // 
-            this.pic_logo.EditValue = global::DMM.Properties.Resources.DMM_PNG;
+            this.pic_logo.EditValue = global::DMM.Properties.Resources.DMM_PNG_1_Compressed;
             this.pic_logo.Location = new System.Drawing.Point(173, 223);
             this.pic_logo.Name = "pic_logo";
             this.pic_logo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -228,6 +228,7 @@ namespace DMM
             this.MinimizeBox = false;
             this.Name = "FRM_Settings";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الاعدادات";
             this.Load += new System.EventHandler(this.FRM_Settings_Load);
             this.groupBox1.ResumeLayout(false);

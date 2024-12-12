@@ -124,4 +124,7 @@
   <data name="DMM_PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DMM_PNG_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DMM_PNG_1_Compressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMM_PNG_1-Compressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

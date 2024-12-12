@@ -345,6 +345,7 @@
       <DependentUpon>MDMM.edmx</DependentUpon>
       <LastGenOutput>MDMM.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\DMM_PNG_1-Compressed.png" />
     <None Include="Resources\DMM_PNG_1.png" />
     <None Include="Resources\DMM_ICON_1.ico" />
   </ItemGroup>

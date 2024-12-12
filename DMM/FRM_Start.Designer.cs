@@ -75,25 +75,25 @@ namespace DMM
             // peImage
             // 
             this.peImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.peImage.EditValue = global::DMM.Properties.Resources.DMM_PNG;
+            this.peImage.EditValue = global::DMM.Properties.Resources.DMM_PNG_1_Compressed;
             this.peImage.Location = new System.Drawing.Point(1, 1);
             this.peImage.Margin = new System.Windows.Forms.Padding(4);
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;
-            this.peImage.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.peImage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.peImage.Properties.Appearance.Options.UseBackColor = true;
             this.peImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peImage.Properties.ShowMenu = false;
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.peImage.Properties.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.None;
-            this.peImage.Size = new System.Drawing.Size(598, 469);
+            this.peImage.Size = new System.Drawing.Size(598, 470);
             this.peImage.TabIndex = 9;
             // 
             // FRM_Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 583);
+            this.ClientSize = new System.Drawing.Size(600, 585);
             this.Controls.Add(this.peImage);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelCopyright);
