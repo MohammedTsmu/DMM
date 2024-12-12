@@ -84,7 +84,7 @@ namespace DMM.AddPage
             this.panel1.Location = new System.Drawing.Point(0, 564);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1142, 112);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 999;
             // 
             // txt_paymentrs
             // 
@@ -136,7 +136,7 @@ namespace DMM.AddPage
             this.panel6.Location = new System.Drawing.Point(787, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(355, 112);
-            this.panel6.TabIndex = 7;
+            this.panel6.TabIndex = 999;
             // 
             // txt_name
             // 

@@ -92,7 +92,7 @@ namespace DMM.AddPage
             this.panel2.Controls.Add(this.btn_add);
             this.panel2.Controls.Add(this.edt_password);
             this.panel2.Controls.Add(this.edt_username);
-            this.panel2.Location = new System.Drawing.Point(124, 197);
+            this.panel2.Location = new System.Drawing.Point(124, 182);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(694, 449);
             this.panel2.TabIndex = 4;
@@ -126,7 +126,7 @@ namespace DMM.AddPage
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.label1.Font = new System.Drawing.Font("LBC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(124, 0);
+            this.label1.Location = new System.Drawing.Point(124, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(694, 143);
             this.label1.TabIndex = 0;
@@ -139,7 +139,7 @@ namespace DMM.AddPage
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 684);
+            this.ClientSize = new System.Drawing.Size(943, 660);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -151,7 +151,7 @@ namespace DMM.AddPage
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "تسجيل الدخول";
+            this.Text = "DMM تسجيل الدخول في";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FRM_UserLogin_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.toastNotificationsManager1)).EndInit();
             this.panel2.ResumeLayout(false);
