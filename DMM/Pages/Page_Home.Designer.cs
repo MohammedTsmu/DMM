@@ -53,9 +53,9 @@ namespace DMM.Pages
             this.txt_companytitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_companytitle.Font = new System.Drawing.Font("LBC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_companytitle.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_companytitle.Location = new System.Drawing.Point(3, 323);
+            this.txt_companytitle.Location = new System.Drawing.Point(4, 323);
             this.txt_companytitle.Name = "txt_companytitle";
-            this.txt_companytitle.Size = new System.Drawing.Size(955, 143);
+            this.txt_companytitle.Size = new System.Drawing.Size(953, 143);
             this.txt_companytitle.TabIndex = 0;
             this.txt_companytitle.Text = "اسم الشركة";
             this.txt_companytitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -70,7 +70,7 @@ namespace DMM.Pages
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::DMM.Properties.Resources.DMM_PNG_1_Compressed;
-            this.pictureBox1.Location = new System.Drawing.Point(351, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(350, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(268, 180);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -44,7 +44,7 @@
             this.btn_customerreoprt.Appearance.Options.UseFont = true;
             this.btn_customerreoprt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_customerreoprt.ImageOptions.Image")));
             this.btn_customerreoprt.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btn_customerreoprt.Location = new System.Drawing.Point(58, 60);
+            this.btn_customerreoprt.Location = new System.Drawing.Point(58, 110);
             this.btn_customerreoprt.Name = "btn_customerreoprt";
             this.btn_customerreoprt.Size = new System.Drawing.Size(199, 75);
             this.btn_customerreoprt.TabIndex = 2;
@@ -54,11 +54,12 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panel1.Controls.Add(this.btn_customerreoprt);
             this.panel1.Controls.Add(this.btn_supplierreport);
-            this.panel1.Location = new System.Drawing.Point(231, 225);
+            this.panel1.Location = new System.Drawing.Point(231, 175);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(598, 185);
+            this.panel1.Size = new System.Drawing.Size(598, 285);
             this.panel1.TabIndex = 7;
             // 
             // btn_supplierreport
@@ -70,7 +71,7 @@
             this.btn_supplierreport.Appearance.Options.UseFont = true;
             this.btn_supplierreport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_supplierreport.ImageOptions.Image")));
             this.btn_supplierreport.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btn_supplierreport.Location = new System.Drawing.Point(360, 60);
+            this.btn_supplierreport.Location = new System.Drawing.Point(360, 110);
             this.btn_supplierreport.Name = "btn_supplierreport";
             this.btn_supplierreport.Size = new System.Drawing.Size(199, 75);
             this.btn_supplierreport.TabIndex = 1;
