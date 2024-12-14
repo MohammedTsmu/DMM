@@ -103,7 +103,7 @@ namespace DMM.AddPage
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(284, 208);
+            this.label2.Location = new System.Drawing.Point(282, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 36);
             this.label2.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace DMM.AddPage
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(254, 88);
+            this.label4.Location = new System.Drawing.Point(251, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(193, 36);
             this.label4.TabIndex = 5;

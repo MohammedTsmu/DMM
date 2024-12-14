@@ -49,7 +49,7 @@ namespace DMM.AddPage
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(271, 46);
+            this.label1.Location = new System.Drawing.Point(262, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 36);
             this.label1.TabIndex = 0;
@@ -58,7 +58,7 @@ namespace DMM.AddPage
             // edt_name
             // 
             this.edt_name.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edt_name.Location = new System.Drawing.Point(41, 102);
+            this.edt_name.Location = new System.Drawing.Point(46, 102);
             this.edt_name.Name = "edt_name";
             this.edt_name.Size = new System.Drawing.Size(581, 42);
             this.edt_name.TabIndex = 1;
@@ -68,7 +68,7 @@ namespace DMM.AddPage
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(271, 166);
+            this.label2.Location = new System.Drawing.Point(265, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 36);
             this.label2.TabIndex = 0;
@@ -77,7 +77,7 @@ namespace DMM.AddPage
             // edt_phone
             // 
             this.edt_phone.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edt_phone.Location = new System.Drawing.Point(41, 222);
+            this.edt_phone.Location = new System.Drawing.Point(46, 222);
             this.edt_phone.Name = "edt_phone";
             this.edt_phone.Size = new System.Drawing.Size(581, 42);
             this.edt_phone.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace DMM.AddPage
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 286);
+            this.label3.Location = new System.Drawing.Point(288, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 36);
             this.label3.TabIndex = 0;
@@ -96,7 +96,7 @@ namespace DMM.AddPage
             // edt_address
             // 
             this.edt_address.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edt_address.Location = new System.Drawing.Point(41, 338);
+            this.edt_address.Location = new System.Drawing.Point(46, 338);
             this.edt_address.Name = "edt_address";
             this.edt_address.Size = new System.Drawing.Size(581, 42);
             this.edt_address.TabIndex = 3;
