@@ -124,6 +124,7 @@ namespace DMM.AddPage
             this.edt_name.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_name.Location = new System.Drawing.Point(28, 108);
             this.edt_name.Name = "edt_name";
+            this.edt_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.edt_name.Size = new System.Drawing.Size(609, 218);
             this.edt_name.TabIndex = 1;
             this.edt_name.Text = "";

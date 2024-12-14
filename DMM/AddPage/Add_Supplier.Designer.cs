@@ -60,6 +60,7 @@ namespace DMM.AddPage
             this.edt_name.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_name.Location = new System.Drawing.Point(41, 102);
             this.edt_name.Name = "edt_name";
+            this.edt_name.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_name.Size = new System.Drawing.Size(581, 42);
             this.edt_name.TabIndex = 1;
             this.edt_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -79,6 +80,7 @@ namespace DMM.AddPage
             this.edt_phone.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_phone.Location = new System.Drawing.Point(41, 222);
             this.edt_phone.Name = "edt_phone";
+            this.edt_phone.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_phone.Size = new System.Drawing.Size(581, 42);
             this.edt_phone.TabIndex = 2;
             this.edt_phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -98,6 +100,7 @@ namespace DMM.AddPage
             this.edt_address.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edt_address.Location = new System.Drawing.Point(41, 338);
             this.edt_address.Name = "edt_address";
+            this.edt_address.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_address.Size = new System.Drawing.Size(581, 42);
             this.edt_address.TabIndex = 3;
             this.edt_address.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

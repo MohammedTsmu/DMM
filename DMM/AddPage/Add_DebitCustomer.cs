@@ -128,7 +128,7 @@ namespace DMM.AddPage
         // Clear Value 
         private void ClearData()
         {
-            edt_name.Text = edt_name.Text = "";
+            edt_name.Text = edt_debit.Text = "";
         }
     }
 }
