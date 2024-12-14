@@ -448,7 +448,7 @@ namespace DMM.AddPage
             this.btn_paymentprint.Appearance.Options.UseFont = true;
             this.btn_paymentprint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_paymentprint.ImageOptions.Image")));
             this.btn_paymentprint.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btn_paymentprint.Location = new System.Drawing.Point(36, 12);
+            this.btn_paymentprint.Location = new System.Drawing.Point(12, 12);
             this.btn_paymentprint.Name = "btn_paymentprint";
             this.btn_paymentprint.Size = new System.Drawing.Size(120, 75);
             this.btn_paymentprint.TabIndex = 8;
@@ -462,7 +462,7 @@ namespace DMM.AddPage
             this.btn_paymentedit.Appearance.Options.UseFont = true;
             this.btn_paymentedit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_paymentedit.ImageOptions.Image")));
             this.btn_paymentedit.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btn_paymentedit.Location = new System.Drawing.Point(138, 12);
+            this.btn_paymentedit.Location = new System.Drawing.Point(140, 12);
             this.btn_paymentedit.Name = "btn_paymentedit";
             this.btn_paymentedit.Size = new System.Drawing.Size(120, 75);
             this.btn_paymentedit.TabIndex = 7;
@@ -490,7 +490,7 @@ namespace DMM.AddPage
             this.btn_paymentadd.Appearance.Options.UseFont = true;
             this.btn_paymentadd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_paymentadd.ImageOptions.Image")));
             this.btn_paymentadd.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btn_paymentadd.Location = new System.Drawing.Point(398, 12);
+            this.btn_paymentadd.Location = new System.Drawing.Point(396, 12);
             this.btn_paymentadd.Name = "btn_paymentadd";
             this.btn_paymentadd.Size = new System.Drawing.Size(120, 75);
             this.btn_paymentadd.TabIndex = 5;

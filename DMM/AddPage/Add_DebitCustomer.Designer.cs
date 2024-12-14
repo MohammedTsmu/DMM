@@ -47,7 +47,7 @@ namespace DMM.AddPage
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(258, 50);
+            this.label1.Location = new System.Drawing.Point(239, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 36);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace DMM.AddPage
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(258, 329);
+            this.label2.Location = new System.Drawing.Point(257, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(159, 36);
             this.label2.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace DMM.AddPage
             // edt_debit
             // 
             this.edt_debit.Font = new System.Drawing.Font("LBC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edt_debit.Location = new System.Drawing.Point(28, 368);
+            this.edt_debit.Location = new System.Drawing.Point(32, 368);
             this.edt_debit.Name = "edt_debit";
             this.edt_debit.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.edt_debit.Size = new System.Drawing.Size(609, 42);
@@ -122,7 +122,7 @@ namespace DMM.AddPage
             // edt_name
             // 
             this.edt_name.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edt_name.Location = new System.Drawing.Point(28, 108);
+            this.edt_name.Location = new System.Drawing.Point(32, 108);
             this.edt_name.Name = "edt_name";
             this.edt_name.Size = new System.Drawing.Size(609, 218);
             this.edt_name.TabIndex = 1;
